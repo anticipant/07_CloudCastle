@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'heliosc';
+    src: url('../font/HeliosC.eot');
+    src: url('../font/heliosc-webfont.woff2') format('woff2'),
+         url('../font/heliosc-webfont.woff') format('woff'),
+         url('../font/heliosc-webfont.ttf') format('truetype'),
+         url('../font/heliosc-webfont.svg#heliosc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'heliosthinc';
+    src: url('../font/HeliosThinC.eot');
+    src: url('../font/heliosthinc-webfont.woff2') format('woff2'),
+         url('../font/heliosthinc-webfont.woff') format('woff'),
+         url('../font/heliosthinc-webfont.ttf') format('truetype'),
+         url('../font/heliosthinc-webfont.svg#heliosthinc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helioslightc';
+    src: url('../font/HeliosLightC.eot');
+    src: url('../font/helioslightc-webfont.woff2') format('woff2'),
+         url('../font/helioslightc-webfont.woff') format('woff'),
+         url('../font/helioslightc-webfont.ttf') format('truetype'),
+         url('../font/helioslightc-webfont.svg#helioslightc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helioscondc';
+    src: url('../font/HeliosCondC.eot');
+    src: url('../font/helioscondc-webfont.woff2') format('woff2'),
+         url('../font/helioscondc-webfont.woff') format('woff'),
+         url('../font/helioscondc-webfont.ttf') format('truetype'),
+         url('../font/helioscondc-webfont.svg#helioscondc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 980px;
+/*    background-color: grey;*/
+}
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-plus {
+    width: 16px;
+    height: 16px;
+    background-position: -76px -10px;
+}
+
+
+/*   ~~~~ HEADER ~~~~  */
+
+header {
+    margin: 0 auto;
+    padding: 0;
+    width: 97.75510204081633%;  /*  958/980  */
+    width: 958px;
+    min-height: 78px;
+    background-color: grey;
+    
+}
+header .logo {
+    padding-left: 35px;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.navigation {
+    float: right;
+    margin-top: 16px;
+}
+.navigation ul {
+    padding: 0;
+    margin: 0; 
+}
+.navigation li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    font-family: 'heliosc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 48.22px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin-right: 50px;
+    
+}
+
+.social {
+    float: right;
+    margin-top: 27px;
+}
+.social .social-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+    margin-right: 45px;
+/*    background-color: #fff;*/
+    position: relative;
+    opacity: 0.75;
+}
+.social .social-btn:last-of-type {
+    margin-right: 60px;
+}
+.social .social-btn:hover {
+    opacity: 1;
+}
+.social .social-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    
+}
+.social .sprite-twitter:before {
+    width: 16px;
+    height: 14px;
+    background-position: -112px -10px;
+}
+.social .sprite-Ru:before {
+    width: 18px;
+    height: 13px;
+    background-position: -10px -10px;
+}
+
+.social .sprite-facebook:before {
+    width: 8px;
+    height: 16px;
+    background-position: -48px -10px;
+}
+
+/*  ~~~~ MAIN ~~~~ */
+main {
+    margin: 0 auto;
+    padding: 0;
+    width: 958px;
+}
+.advantages {
+    font-size: 0;  
+}
+.advantages div {
+    display: inline-block;
+    vertical-align: top;
+}
+.team {
+    width: 100%;
+    background-color: #90ccd1;
+    background-image: url(../img/team.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.team h2 {
+    width: 284px;
+    margin: 0;
+    margin-left: 35px;
+    padding: 0;
+    padding-top: 50px;
+
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 48.22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.team p {
+    width: 284px;
+    margin: 0;
+    margin-left: 35px;
+    padding: 0;
+    padding-bottom: 27px;
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.experience {
+    width: 319px;
+    height: 640px;
+    text-align: center;
+    background-image: 
+        url(../img/team2.jpg),
+        linear-gradient(to top, #d7d7d7 , #f5f5f5 45%, #f5f5f5 100%);
+/*    background-color: #90ccd1;*/
+/*    background-image: url(../img/team.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center 120px, 0 0px;
+}
+.experience h2 {
+/*    width: 284px;*/
+    margin: 0;
+/*    margin-left: 35px;*/
+    padding: 0px;
+    padding-top: 240px;
+
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35.74px;
+    line-height: 41.74px;
+    color: #483435;
+    text-align: center;
+
+}
+.experience p {
+/*    width: 284px;*/
+    margin: 0;
+/*    margin-left: 35px;*/
+    padding: 0 45px;
+    padding-bottom: 135px;
+    padding-top: 30px;
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1e1a33;
+    text-align: center;
+}
+
+.design {
+    width: 320px;
+    height: 640px;
+}
+.design .block1 {
+    height: 50%;
+}
+.design .block2 {
+    height: 50%;
+    background: #000 url(../img/design.jpg) no-repeat;
+}
+.design h2 {
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 200px;
+    padding: 0;
+    
+    font-family: 'helioslightc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 48.22px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+}
+.design p {
+    margin: 0;
+    margin-left: 40px;
+    padding: 0;
+    font-family: 'helioslightc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.work {
+    width: 319px;
+    height: 640px;
+    background: #000 url(../img/work.jpg) no-repeat;
+}
+.work h2 {
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 530px;
+    padding: 0;
+    
+    font-family: 'helioslightc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 48.22px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+}
+.work p {
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 120px;
+
+    padding: 0;
+    font-family: 'helioslightc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
