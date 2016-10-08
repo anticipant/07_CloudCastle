@@ -65,7 +65,7 @@ header {
     width: 97.75510204081633%;  /*  958/980  */
     width: 958px;
     min-height: 78px;
-    background-color: grey;
+/*    background-color: grey;*/
     
 }
 header .logo {
@@ -310,4 +310,187 @@ main {
     font-size: 15px;
     line-height: 18px;
     color: #000000;
+}
+
+/*  ~~~~ meetings ~~~~ */
+
+.jack .meetings {
+    width: 100%;
+    position: relative;
+    
+}
+.meetings h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-image: 
+        linear-gradient(to right, #fad35d 66.70146137787056%, #fff 66.70146137787056%);
+    font-family: 'helioscondc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    
+    font-size: 36px;
+    line-height: 56px;
+    color: #5c4b4c;
+    text-transform: uppercase;
+    text-align: center;
+}
+.meetings .plus-btn {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'arial';
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: ;
+    text-align: center;
+    color: #5c4b4c;
+    text-decoration: none;
+    
+    
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #5c4b4c;
+    border-radius: 50%;
+    position: absolute;
+    left: 59.60334029227557%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.jack .person-1 {
+    width: 33.29853862212944%;  /*  319/958  */
+    height: 640px;
+    position: relative;
+    background-image: url(../img/person-1.png);
+    background-repeat: no-repeat;
+    float: left
+}
+.active-person:after {
+    display: none;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: -40px;
+    top: 35px;
+    border: 20px solid transparent;	
+    border-left: 20px solid #fad35d;
+}
+.active-person:active {
+    background-image: 
+        linear-gradient(to left, #fad35d , transparent 40px),
+        url(../img/person-1.png);
+}
+.active-person:active.active-person:after {
+    display: inline-block;
+}
+
+
+.jack .person-3 {
+    width: 33.29853862212944%;  /*  319/958  */
+    height: 640px;
+    position: relative;
+    background: url(../img/person-3.jpg) no-repeat;
+    float: right;
+}
+.person-3 h3 {
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 56px;
+    color: #fff;
+    text-align: left;
+    
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 355px;
+    margin-bottom: 15px;
+    
+}
+.person-3 p {
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    text-align: left;
+    
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 45px;
+}
+.person-3 .plus-btn {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'arial';
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: ;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    
+    
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+
+}
+
+.jack .description {
+    width: 33.40292275574113%;  /*  320/958  */
+    height: 320px;
+    background-color: #fff;
+    position: relative;
+    float: right;
+}
+.description h3 {
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 56px;
+    color: #483435;
+    text-align: left;
+    
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    
+}
+.description p {
+    font-family: 'heliosthinc', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #3b3b3b;
+    text-align: left;
+    
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    margin-right: 45px;
+}
+.jack .person-2 {
+    width: 33.40292275574113%;  /*  320/958  */
+    height: 640px;
+    position: relative;
+    background: url(../img/person-2.jpg) no-repeat;
+    float: right;
+    
 }
